@@ -1,0 +1,23 @@
+name: Pin submodule
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  pin:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+      - name: Pin RecompOne to 9edaf4b
+        run: |
+          git -C RecompOne fetch origin
+          git -C RecompOne checkout 9edaf4b
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add RecompOne
+          git commit -m "Pin RecompOne to 9edaf4b"
+          git push
