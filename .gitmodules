@@ -1,3 +1,8 @@
 [submodule "RecompOne"]
 	path = RecompOne
 	url = https://github.com/kia100/RecompOne_k100.git
+	branch = main
+[submodule "mods"]
+	path = mods
+	url = https://github.com/BlackLabelHQ/SymphonyRecompMods.git
+	branch = main
