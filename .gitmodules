@@ -1,5 +1,5 @@
-[submodule "RecompOne_k100"]
-	path = RecompOne_k100
+[submodule "RecompOne"]
+	path = RecompOne
 	url = https://github.com/kia100/RecompOne_k100.git
 	branch = main
 [submodule "mods"]
